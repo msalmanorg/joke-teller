@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background: #45BADD;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(robot.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+button{
+    height: 50px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF3482;
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button:hover {
+    filter: brightness(95%);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+button:disabled{
+    transform: scale(0.98);
+    filter: brightness(40%);
+    cursor: no-drop;
+
+
+}
+#input{
+    width: 70%;
+    height: 250px;
+    padding: 30px;
+    color: #000;
+    font-size: 21px;
+    font-weight: 700;
+
+    text-align: left;
+    line-height: 30px;
+}
+#audio{
+    position: absolute;
+    left: -1000px;
+}
+#img{
+    width: 40px;
+    border-radius: 50px;
+    aspect-ratio: 1/1;
+    z-index: 1;
+    position: absolute;
+    margin: 10px 10px 0 0;
+}
+.container div{
+    width: 70%;
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+@media screen and (max-width:700px) {
+  .container {
+      background-size: cover;
+      background-position: center center;
+  }
+    
+}
